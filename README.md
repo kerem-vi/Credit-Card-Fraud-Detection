@@ -29,5 +29,7 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 
 ## Ekip ve Roller  
 
+NAZ/YÖNETİCİ
+
 
 
