@@ -18,11 +18,16 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 
 * Dengesiz veri seti (imbalanced dataset) problemi için gerekli ön işleme adımlarının uygulanması
 
-* Logistic Regression ve Decision Tree modellerinin eğitilmesi ve test edilmesi
+* Logistic Regression, Decision Tree ve Random Forest modellerinin eğitilmesi ve test edilmesi
 
-* Model performanslarının Precision, Recall, F1-Score ve ROC-AUC metrikleriyle değerlendirilmesi
+* Model performanslarının sadece Accuracy metriğiyle değil de Precision, Recall, F1-Score ve ROC-AUC metrikleriyle değerlendirilmesi
 
 * Modüler bir yazılım mimarisi (src/, notebooks/, data/) oluşturulması
+
+## Kapsam Dışı
+* Derin öğrenme (Deep Learning / Neural Networks) veya XGBoost, LightGBM gibi ileri düzey topluluk (ensemble) algoritmalarının bu aşamada projeye dahil edilmesi
+
+## Ekip ve Roller  
 
 
 
