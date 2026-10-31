@@ -27,6 +27,11 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 ## Kapsam Dışı
 * Derin öğrenme (Deep Learning / Neural Networks) veya XGBoost, LightGBM gibi ileri düzey topluluk (ensemble) algoritmalarının bu aşamada projeye dahil edilmesi
 
+## Diyagramlar ve iş dağılımları
+<img width="1728" height="2486" alt="IMG_0561" src="https://github.com/user-attachments/assets/c697782c-3ca1-4c17-96af-a2515b960f23" />
+<img width="1728" height="2486" alt="IMG_0562" src="https://github.com/user-attachments/assets/5b76c278-6453-4fe1-8ede-b239513c0b6c" />
+<img width="1728" height="2486" alt="IMG_0563" src="https://github.com/user-attachments/assets/48304c81-4835-41ec-84a3-4459f15d3f61" />
+
 ## Ekip ve Roller  
 
 NAZ/YÖNETİCİ
