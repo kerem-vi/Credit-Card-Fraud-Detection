@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FraudGuard | Kredi Kartı Risk Paneli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">YEREL RİSK ANALİZİ</p>
+          <h1>FraudGuard</h1>
+          <p class="subtitle">Kredi kartı işlemlerini makine öğrenmesiyle hızlıca değerlendir.</p>
+        </div>
+        <span class="status {{ 'ready' if model_ready else 'waiting' }}">
+          {{ 'Model hazır' if model_ready else 'Veri bekleniyor' }}
+        </span>
+      </header>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+          <div class="notice {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endwith %}
+
+      {% if prediction %}
+        <section class="prediction {{ 'fraud' if prediction.is_fraud else 'normal' }}">
+          <div>
+            <p class="eyebrow">TAHMİN SONUCU</p>
+            <h2>{{ prediction.label }}</h2>
+            <p>Modelin dolandırıcılık olasılığı: <strong>%{{ prediction.probability }}</strong></p>
+          </div>
+          <div class="score">{{ prediction.probability }}%</div>
+        </section>
+      {% endif %}
+
+      <section class="grid">
+        <article class="card">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">İŞLEM ANALİZİ</p>
+              <h2>Yeni işlem kontrolü</h2>
+            </div>
+            <span class="muted">V1</span>
+          </div>
+          {% if model_ready %}
+            <form method="post" action="{{ url_for('predict') }}">
+              <div class="fields">
+                {% for feature in features %}
+                  <label>
+                    {{ feature }}
+                    <input type="number" step="any" name="{{ feature }}"
+                           value="{{ submitted_values.get(feature, '') if submitted_values else '' }}"
+                           placeholder="0">
+                  </label>
+                {% endfor %}
+              </div>
+              <button type="submit">İşlemi değerlendir</button>
+            </form>
+          {% else %}
+            <div class="empty">
+              <p><code>data/creditcard.csv</code> dosyasını ekledikten sonra modeli eğitin.</p>
+              <form method="post" action="{{ url_for('train') }}">
+                <button type="submit">Modeli eğitmeyi dene</button>
+              </form>
+            </div>
+          {% endif %}
+        </article>
+
+        <aside class="card">
+          <p class="eyebrow">MODEL ÖZETİ</p>
+          <h2>Performans</h2>
+          {% if metrics %}
+            <div class="metrics">
+              {% for key, value in metrics.items() if key != 'test_size' %}
+                <div><span>{{ key|replace('_', ' ')|title }}</span><strong>{{ value }}</strong></div>
+              {% endfor %}
+            </div>
+            <p class="muted">Test örneği: {{ metrics.test_size }}</p>
+          {% else %}
+            <p class="muted">Metrikleri görmek için modeli eğitin.</p>
+          {% endif %}
+          {% if class_distribution %}
+            <div class="distribution">
+              <div><span>Normal</span><strong>{{ class_distribution.normal }}</strong></div>
+              <div><span>Fraud</span><strong>{{ class_distribution.fraud }}</strong></div>
+            </div>
+          {% endif %}
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
