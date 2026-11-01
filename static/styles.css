@@ -38,6 +38,8 @@ h2 { margin: 0 0 18px; font-size: 1.35rem; }
 label { color: var(--muted); font-size: .82rem; }
 input { width: 100%; margin-top: 6px; border: 1px solid var(--line); border-radius: 9px; background: var(--panel-soft); color: var(--text); padding: 10px; }
 button { cursor: pointer; border: 0; border-radius: 10px; background: var(--accent); color: #071411; font-weight: 800; padding: 12px 17px; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+button.secondary { border: 1px solid var(--line); background: transparent; color: var(--text); }
 .empty { border: 1px dashed var(--line); border-radius: 12px; padding: 22px; }
 .metrics { display: grid; gap: 12px; margin: 24px 0; }
 .metrics div { border-bottom: 1px solid var(--line); padding-bottom: 9px; color: var(--muted); text-transform: capitalize; }

@@ -46,18 +46,22 @@
             <span class="muted">V1</span>
           </div>
           {% if model_ready %}
-            <form method="post" action="{{ url_for('predict') }}">
+            <form id="prediction-form" method="post" action="{{ url_for('predict') }}">
               <div class="fields">
                 {% for feature in features %}
-                  <label>
+                  <label for="field-{{ feature }}">
                     {{ feature }}
-                    <input type="number" step="any" name="{{ feature }}"
+                    <input id="field-{{ feature }}" type="number" step="any" name="{{ feature }}"
                            value="{{ submitted_values.get(feature, '') if submitted_values else '' }}"
-                           placeholder="0">
+                           placeholder="0" required>
                   </label>
                 {% endfor %}
               </div>
-              <button type="submit">İşlemi değerlendir</button>
+              <div class="form-actions">
+                <button type="submit">İşlemi değerlendir</button>
+                <button class="secondary" type="button" id="fill-defaults">Alanları 0 ile doldur</button>
+                <button class="secondary" type="reset">Temizle</button>
+              </div>
             </form>
           {% else %}
             <div class="empty">
@@ -91,5 +95,12 @@
         </aside>
       </section>
     </main>
+    <script>
+      document.getElementById("fill-defaults")?.addEventListener("click", () => {
+        document.querySelectorAll("#prediction-form input").forEach((input) => {
+          input.value = "0";
+        });
+      });
+    </script>
   </body>
 </html>

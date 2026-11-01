@@ -36,6 +36,7 @@ class FraudModel:
         self.feature_names: list[str] = []
         self.metrics: dict[str, Any] = {}
         self.class_distribution: dict[str, int] = {}
+        self.model_path = MODEL_PATH
 
     def load(self) -> bool:
         if not MODEL_PATH.exists():
