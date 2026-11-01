@@ -29,14 +29,20 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 
 ## Diyagramlar ve iş dağılımları
 [📄 Proje Raporunu Görüntüle (PDF)](./IMG_0561.JPG)
+
 [📄 Proje Raporunu Görüntüle (PDF)](./IMG_0562.JPG)
+
 [📄 Proje Raporunu Görüntüle (PDF)](./IMG_0563.JPG)
+
 
 ## Ekip ve Roller  
 
 NAZ/YÖNETİCİ VE RAPORLAMA
+
 KEREM/KULLANICI VE KART İŞLEMLERİ
+
 KAAN/DOLANDIRICILIK TESPİT ALGORİTMASI
+
 
 
 
