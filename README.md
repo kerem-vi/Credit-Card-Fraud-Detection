@@ -34,7 +34,9 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 
 ## Ekip ve Roller  
 
-NAZ/YÖNETİCİ
+NAZ/YÖNETİCİ VE RAPORLAMA
+KEREM/KULLANICI VE KART İŞLEMLERİ
+KAAN/DOLANDIRICILIK TESPİT ALGORİTMASI
 
 
 
