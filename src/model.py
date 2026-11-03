@@ -33,6 +33,7 @@ METRICS_PATH = MODEL_DIR / "metrics.json"
 class FraudModel:
     def __init__(self) -> None:
         self.pipeline: Pipeline | None = None
+        self.pipelines: dict[str, Pipeline] = {}
         self.feature_names: list[str] = []
         self.metrics: dict[str, Any] = {}
         self.class_distribution: dict[str, int] = {}
@@ -44,6 +45,7 @@ class FraudModel:
 
         payload = joblib.load(MODEL_PATH)
         self.pipeline = payload["pipeline"]
+        self.pipelines = payload.get("pipelines", {"random_forest": self.pipeline})
         self.feature_names = payload["feature_names"]
         self.class_distribution = payload.get("class_distribution", {})
         if METRICS_PATH.exists():
@@ -86,16 +88,6 @@ class FraudModel:
             ]
         )
 
-        model = RandomForestClassifier(
-            n_estimators=120,
-            class_weight="balanced",
-            n_jobs=-1,
-            random_state=42,
-        )
-        self.pipeline = Pipeline(
-            steps=[("preprocessor", preprocessor), ("classifier", model)]
-        )
-
         x_train, x_test, y_train, y_test = train_test_split(
             features,
             target,
@@ -103,26 +95,51 @@ class FraudModel:
             stratify=target,
             random_state=42,
         )
-        self.pipeline.fit(x_train, y_train)
-        probabilities = self.pipeline.predict_proba(x_test)[:, 1]
-        predictions = (probabilities >= 0.5).astype(int)
+        candidates = {
+            "logistic_regression": LogisticRegression(
+                class_weight="balanced", max_iter=1000, random_state=42
+            ),
+            "decision_tree": DecisionTreeClassifier(
+                class_weight="balanced", max_depth=12, random_state=42
+            ),
+            "random_forest": RandomForestClassifier(
+                n_estimators=120,
+                class_weight="balanced",
+                n_jobs=-1,
+                random_state=42,
+            ),
+        }
+        self.pipelines = {}
+        comparison: dict[str, dict[str, Any]] = {}
+        for name, classifier in candidates.items():
+            pipeline = Pipeline(
+                steps=[
+                    ("preprocessor", preprocessor),
+                    ("classifier", classifier),
+                ]
+            )
+            pipeline.fit(x_train, y_train)
+            probabilities = pipeline.predict_proba(x_test)[:, 1]
+            predictions = (probabilities >= 0.5).astype(int)
+            comparison[name] = self._metrics(
+                y_test, predictions, probabilities
+            )
+            self.pipelines[name] = pipeline
+
+        self.pipeline = self.pipelines["random_forest"]
+        selected_metrics = comparison["random_forest"].copy()
+        selected_metrics["test_size"] = int(len(y_test))
         self.metrics = {
-            "accuracy": round(float(accuracy_score(y_test, predictions)), 4),
-            "precision": round(
-                float(precision_score(y_test, predictions, zero_division=0)), 4
-            ),
-            "recall": round(
-                float(recall_score(y_test, predictions, zero_division=0)), 4
-            ),
-            "f1": round(float(f1_score(y_test, predictions, zero_division=0)), 4),
-            "roc_auc": round(float(roc_auc_score(y_test, probabilities)), 4),
-            "test_size": int(len(y_test)),
+            **selected_metrics,
+            "selected_model": "random_forest",
+            "models": comparison,
         }
 
         MODEL_DIR.mkdir(exist_ok=True)
         joblib.dump(
             {
                 "pipeline": self.pipeline,
+                "pipelines": self.pipelines,
                 "feature_names": self.feature_names,
                 "class_distribution": self.class_distribution,
             },
@@ -130,6 +147,24 @@ class FraudModel:
         )
         METRICS_PATH.write_text(json.dumps(self.metrics, indent=2))
         return self.metrics
+
+    @staticmethod
+    def _metrics(
+        target: pd.Series,
+        predictions: Any,
+        probabilities: Any,
+    ) -> dict[str, float]:
+        return {
+            "accuracy": round(float(accuracy_score(target, predictions)), 4),
+            "precision": round(
+                float(precision_score(target, predictions, zero_division=0)), 4
+            ),
+            "recall": round(
+                float(recall_score(target, predictions, zero_division=0)), 4
+            ),
+            "f1": round(float(f1_score(target, predictions, zero_division=0)), 4),
+            "roc_auc": round(float(roc_auc_score(target, probabilities)), 4),
+        }
 
     def predict(self, values: dict[str, float]) -> dict[str, Any]:
         if self.pipeline is None:
@@ -149,7 +184,7 @@ class FraudModel:
 
 
 def build_comparison(data_path: Path = DATA_PATH) -> dict[str, Any]:
-    """Train the two baseline models described in the project scope."""
+    """Train and compare all three models described in the project scope."""
     frame = pd.read_csv(data_path)
     features = frame.drop(columns=["Class"])
     target = frame["Class"].astype(int)
@@ -180,6 +215,12 @@ def build_comparison(data_path: Path = DATA_PATH) -> dict[str, Any]:
         ),
         "decision_tree": DecisionTreeClassifier(
             class_weight="balanced", max_depth=12, random_state=42
+        ),
+        "random_forest": RandomForestClassifier(
+            n_estimators=120,
+            class_weight="balanced",
+            n_jobs=-1,
+            random_state=42,
         ),
     }
     results: dict[str, Any] = {}

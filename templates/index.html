@@ -77,8 +77,22 @@
           <p class="eyebrow">MODEL ÖZETİ</p>
           <h2>Performans</h2>
           {% if metrics %}
+            {% if metrics.models %}
+              <p class="muted">Tahmin modeli: {{ metrics.selected_model|replace('_', ' ')|title }}</p>
+              <div class="comparison">
+                {% for model_name, model_metrics in metrics.models.items() %}
+                  <div class="comparison-row">
+                    <strong>{{ model_name|replace('_', ' ')|title }}</strong>
+                    <span>Precision {{ model_metrics.precision }}</span>
+                    <span>Recall {{ model_metrics.recall }}</span>
+                    <span>F1 {{ model_metrics.f1 }}</span>
+                    <span>ROC-AUC {{ model_metrics.roc_auc }}</span>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endif %}
             <div class="metrics">
-              {% for key, value in metrics.items() if key != 'test_size' %}
+              {% for key, value in metrics.items() if key not in ['test_size', 'models', 'selected_model'] %}
                 <div><span>{{ key|replace('_', ' ')|title }}</span><strong>{{ value }}</strong></div>
               {% endfor %}
             </div>
