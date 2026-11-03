@@ -43,12 +43,18 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli olup olmadı
 
 
 ## Ekip ve Roller  
+* Çevik proje geliştirme yönteminin prensiplerine uygun olacak şekilde her ekip üyesi projenin her aşamasında aktif rol oynamaktadır. Projedeki temel sorumluluk alanları ise aşağıda açıklandığı şekilde dağıtılmıştır.
 
-NAZ/YÖNETİCİ VE RAPORLAMA
+* **Naz ([@Th3BourbonKid]) - Dokümentasyon Sorumlusu & İş Analisti**
+Literatür taramasının yönetilmesi, proje dokümantasyonunun oluşturulması, proje gereksinimlerinin belirlenmesi, proje ara raporlarının ve final raporunun hazırlanması, diyagramların oluşturulması.
 
-KEREM/KULLANICI VE KART İŞLEMLERİ
+* **Kerem ([@kerem-vi]) - Yazılımcı & Test Uzmanı**
+Logistic Regression, Decision Tree ve Random Forest modellerinin kodlanması, model eğitimlerinin ve parametre optimizasyonlarının yapılması.
+Model başarı metriklerinin ölçülmesi, modeller arası karşılaştırmalar yapılıp belgelenmesi, hata analizleri.
 
-KAAN/DOLANDIRICILIK TESPİT ALGORİTMASI
+* **Kaan ([@kaanardakaba]) - Süreç Yöneticisi & Veri Analisti**
+Proje Kanban panosunun ve iş akışının yönetilmesi, README dosyasının güncel tutulması, repo düzeni, veri setinin incelenmesi ve keşifsel veri analizi, gerekli ön işleme adımlarının uygulanması.
+
 
 
 
