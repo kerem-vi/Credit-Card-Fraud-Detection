@@ -27,6 +27,8 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 ## Kapsam Dışı
 * Derin öğrenme (Deep Learning / Neural Networks) veya XGBoost, LightGBM gibi ileri düzey topluluk (ensemble) algoritmalarının bu aşamada projeye dahil edilmesi
 
+* Gerçek zamanlı canlı bir API entegrasyonunun yapılması
+
 ## Proje Arayüz
 <img width="2880" height="1618" alt="PROJEARAYUZ" src="https://github.com/user-attachments/assets/8b828a1b-30da-4f70-9380-44f2236ca111" />
 
