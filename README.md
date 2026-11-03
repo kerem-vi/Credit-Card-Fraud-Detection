@@ -6,12 +6,12 @@ Günümüzde dijital bankacılık ve online alışverişlerin artmasıyla birlik
 ## Hedef Kullanıcı
 * Bankalar ve finansal kuruluşların risk yönetimi ve güvenlik birimleri
 
-* E-ticaret platformlarının sahtekarlık önleme (fraud prevention) ekipleri
+* E-ticaret platformlarının sahtekarlık önleme ekipleri
 
 * Kredi kartı kullanıcılarının güvenliğini sağlamakla sorumlu yazılım sistemleri
 
 ## Proje Amacı
-Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup olmadığını makine öğrenmesi algoritmaları kullanarak otomatik olarak tespit edebilen, güvenilir ve modüler bir yazılım altyapısı geliştirmektir. Projede Logistic Regression, Decision Tree ve Random Forest Regression yöntemleri kullanılarak modellerin başarımları karşılaştırılacaktır.
+Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli olup olmadığını makine öğrenmesi algoritmaları kullanarak otomatik olarak tespit edebilen, güvenilir ve modüler bir yazılım altyapısı geliştirmektir. Projede Logistic Regression, Decision Tree ve Random Forest Regression yöntemleri kullanılarak modellerin başarımları karşılaştırılacaktır.
 
 ## Kapsam
 * Kaggle üzerindeki Credit Card Fraud Dataset veri setinin incelenmesi ve veri analizi yapılması
@@ -21,6 +21,8 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli (fraud) olup
 * Logistic Regression, Decision Tree ve Random Forest modellerinin eğitilmesi ve test edilmesi
 
 * Model performanslarının sadece Accuracy metriğiyle değil de Precision, Recall, F1-Score ve ROC-AUC metrikleriyle değerlendirilmesi
+
+* Modellerin her biriyle uygulamalar yapılıp performanslarının ve başarı oranlarının karşılaştırılması, raporlanması
 
 * Modüler bir yazılım mimarisi (src/, notebooks/, data/) oluşturulması
 
