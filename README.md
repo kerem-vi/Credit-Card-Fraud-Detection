@@ -48,14 +48,14 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli olup olmadı
 
   
 
-* **Naz ([@Th3BourbonKid]) - Dokümentasyon Sorumlusu & İş Analisti:**
+* **Naz   [[@Th3BourbonKid]](https://github.com/Th3BourbonKid) - Dokümantasyon Sorumlusu & İş Analisti:**
 Literatür taramasının yönetilmesi, proje dokümantasyonunun oluşturulması, proje gereksinimlerinin belirlenmesi, proje ara raporlarının ve final raporunun hazırlanması, diyagramların oluşturulması.
 
-* **Kerem ([@kerem-vi]) - Yazılımcı & Test Uzmanı:**
+* **Kerem   [[@kerem-vi]](https://github.com/kerem-vi) - Yazılımcı & Test Uzmanı:**
 Logistic Regression, Decision Tree ve Random Forest modellerinin kodlanması, model eğitimlerinin ve parametre optimizasyonlarının yapılması.
 Model başarı metriklerinin ölçülmesi, modeller arası karşılaştırmalar yapılıp belgelenmesi, hata analizleri.
 
-* **Kaan ([@kaanardakaba]) - Süreç Yöneticisi & Veri Analisti:**
+* **Kaan   [[@kaanardakaba]](https://github.com/kaanardakaba) - Süreç Yöneticisi & Veri Analisti:**
 Proje Kanban panosunun ve iş akışının yönetilmesi, README dosyasının güncel tutulması, repo düzeni, veri setinin incelenmesi ve keşifsel veri analizi, gerekli ön işleme adımlarının uygulanması.
 
 
