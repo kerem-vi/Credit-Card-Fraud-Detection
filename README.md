@@ -3,6 +3,8 @@
 ## Problem
 Günümüzde dijital bankacılık ve online alışverişlerin artmasıyla birlikte finansal dolandırıcılık vakaları da hızla artmaktadır. Kredi kartı sahiplerinin bilgileri dışında yapılan hileli işlemler hem bireysel kullanıcılar hem de finansal kurumlar için büyük maddi kayıplara ve güvenlik açıklarına yol açmaktadır. Manuel olarak milyonlarca işlemi anlık incelemek imkansızdır; bu durum otomatik ve hızlı bir tespit mekanizmasına duyulan ihtiyacı ortaya koymaktadır.
 
+
+
 ## Hedef Kullanıcı
 * Bankalar ve finansal kuruluşların risk yönetimi ve güvenlik birimleri
 
@@ -10,8 +12,12 @@ Günümüzde dijital bankacılık ve online alışverişlerin artmasıyla birlik
 
 * Kredi kartı kullanıcılarının güvenliğini sağlamakla sorumlu yazılım sistemleri
 
+  
+
 ## Proje Amacı
-Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli olup olmadığını makine öğrenmesi algoritmaları kullanarak otomatik olarak tespit edebilen, güvenilir ve modüler bir yazılım altyapısı geliştirmektir. Projede Logistic Regression, Decision Tree ve Random Forest Regression yöntemleri kullanılarak modellerin başarımları karşılaştırılacaktır.
+Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olmadığını makine öğrenmesi algoritmaları kullanarak otomatik olarak tespit edebilen, güvenilir ve modüler bir yazılım altyapısı geliştirmektir. Projede Logistic Regression, Decision Tree ve Random Forest Regression yöntemleri kullanılarak modellerin başarımları karşılaştırılacaktır.
+
+
 
 ## Kapsam
 * Kaggle üzerindeki Credit Card Fraud Dataset veri setinin incelenmesi ve veri analizi yapılması
@@ -26,27 +32,34 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin hileli olup olmadı
 
 * Modüler bir yazılım mimarisi (src/, notebooks/, data/) oluşturulması
 
+  
+
 ## Kapsam Dışı
 * Derin öğrenme (Deep Learning / Neural Networks) veya XGBoost, LightGBM gibi ileri düzey topluluk (ensemble) algoritmalarının bu aşamada projeye dahil edilmesi
 
 * Gerçek zamanlı canlı bir API entegrasyonunun yapılması
 
-## Proje Arayüz
-<img width="2880" height="1618" alt="PROJEARAYUZ" src="https://github.com/user-attachments/assets/8b828a1b-30da-4f70-9380-44f2236ca111" />
 
-## Diyagramlar ve iş dağılımları
-[📄 Proje UseCase Diyagramı (PDF)](https://github.com/user-attachments/files/34393532/ProjeUseCaseDiyagrami.drawio.pdf)
+## Veri Seti
+* [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+  
 
-[📄 Sistem Akışı (PDF)](./IMG_0562.JPG)
 
-[📄 Olay Diyagramı (PDF)](./IMG_0563.JPG)
+## Proje Diyagramı ve Uygulama İşleyişi
+[📄 Proje Use Case Diyagramı (PDF)](usecase.png)
+
+[📄 Uygulama İşleyişi (PDF)](UygulamaAkisSemasi.pdf)
+
+
+
+## Literatür
+***************************
 
 
 ## Ekip ve Roller  
 
 Çevik proje geliştirme yönteminin prensiplerine uygun olacak şekilde her ekip üyesi projenin her aşamasında aktif rol oynamaktadır. Projedeki temel sorumluluk alanları ise aşağıda açıklandığı şekilde dağıtılmıştır.
 
-  
 
 * **Naz   [[@Th3BourbonKid]](https://github.com/Th3BourbonKid) - Dokümantasyon Sorumlusu & İş Analisti:**
 Literatür taramasının yönetilmesi, proje dokümantasyonunun oluşturulması, proje gereksinimlerinin belirlenmesi, proje ara raporlarının ve final raporunun hazırlanması, diyagramların oluşturulması.
@@ -58,6 +71,10 @@ Model başarı metriklerinin ölçülmesi, modeller arası karşılaştırmalar 
 * **Kaan   [[@kaanardakaba]](https://github.com/kaanardakaba) - Süreç Yöneticisi & Veri Analisti:**
 Proje Kanban panosunun ve iş akışının yönetilmesi, README dosyasının güncel tutulması, repo düzeni, veri setinin incelenmesi ve keşifsel veri analizi, gerekli ön işleme adımlarının uygulanması.
 
+
+
+## Proje Arayüz
+![ProjeArayuzu](ProjeArayuzu.png)
 
 
 
