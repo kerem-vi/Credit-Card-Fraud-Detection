@@ -48,10 +48,11 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 ## Proje Diyagramları ve Uygulama İşleyişi
 [📄 Proje Use Case Diyagramı (PDF)](ProjeUseCaseDiyagrami.pdf)
 
-[📄ProjeClassDiyagrami (PDF)](https://github.com/user-attachments/files/34529826/ProjeClassDiyagrami.pdf)
+
+[📄Proje Class Diyagramı (PDF)](ProjeClassDiyagrami.pdf)
 
 
-[📄Proje Activity Diyagrami (PDF)](https://github.com/user-attachments/files/34529831/ProjeActivityDiyagrami.pdf)
+[📄Proje Activity Diyagramı (PDF)](ProjeActivityDiyagrami.pdf)
 
 
 [📄 Uygulama İşleyişi (PDF)](Uygulamaİsleyisi.pdf)
