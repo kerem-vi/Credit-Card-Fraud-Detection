@@ -49,10 +49,10 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 [📄 Proje Use Case Diyagramı (PDF)](ProjeUseCaseDiyagrami.pdf)
 
 
-[📄Proje Class Diyagramı (PDF)](ProjeClassDiyagrami.pdf)
+[📄 Proje Class Diyagramı (PDF)](ProjeClassDiyagrami.pdf)
 
 
-[📄Proje Activity Diyagramı (PDF)](ProjeActivityDiyagrami.pdf)
+[📄 Proje Activity Diyagramı (PDF)](ProjeActivityDiyagrami.pdf)
 
 
 [📄 Uygulama İşleyişi (PDF)](Uygulamaİsleyisi.pdf)
