@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+import os
+
 from flask import Flask, flash, jsonify, redirect, render_template, request, url_for
 
 from src.model import DATA_PATH, FraudModel
 
 
 app = Flask(__name__)
-app.secret_key = "local-development-key"
+app.secret_key = os.environ.get("SECRET_KEY", "local-development-key")
 fraud_model = FraudModel()
 
 
@@ -78,6 +80,7 @@ def health():
             "model_ready": fraud_model.pipeline is not None,
             "feature_count": len(fraud_model.feature_names),
             "dataset": DATA_PATH.name if DATA_PATH.exists() else None,
+            "dataset_required": fraud_model.pipeline is None,
         }
     )
 
@@ -104,4 +107,8 @@ def api_predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="127.0.0.1", port=5000)
+    app.run(
+        debug=os.environ.get("FLASK_DEBUG", "0") == "1",
+        host=os.environ.get("HOST", "127.0.0.1"),
+        port=int(os.environ.get("PORT", "5000")),
+    )
