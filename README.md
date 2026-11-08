@@ -62,26 +62,6 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 
 * Bu akış şeması, sistemin çalışma anındaki anlık karar mekanizmasını özetlemektedir. Kullanıcıdan alınan işlem bilgileri analiz edilerek dolandırıcılık olasılığı hesaplanmaktadır. İşlem normal ise onaylanmakta, şüpheli olarak tespit edildiğinde ise otomatik bildirim gönderilerek engelleme mekanizması devreye girmektedir.
 
-## Model Performansları ve Karşılaştırmalı Analiz
-
-Projemizde kullanılan Dünya/ULB kredi kartı işlem veri setindeki sınıf dengesizliği **SMOTE** yöntemiyle giderildikten sonra; Lojistik Regresyon, Destek Vektör Makineleri, Karar Ağaçları, Rastgele Orman ve Yapay Sinir Ağları modelleri eğitilmiş ve test edilmiştir. Elde edilen performans metrikleri ve karşılaştırmalı değerlendirmeler aşağıda sunulmuştur:
-
-| Yöntem | Kesinlik (Precision) | Duyarlılık (Recall) | F1-Skoru | Doğruluk (Accuracy) | AUC Skoru |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Lojistik Regresyon** | 0.974 | 0.921 | 0.947 | 0.948 | 0.989 |
-| **Destek Vektör Makineleri** | 0.973 | 0.919 | 0.945 | 0.947 | 0.989 |
-| **Karar Ağaçları** | 0.980 | 0.970 | 0.975 | 0.980 | 0.997 |
-| **Rastgele Orman (Random Forest)** | 0.996 | 0.948 | 0.972 | 0.972 | 0.998 |
-| **Yapay Sinir Ağları (ANN)** | 0.999 | 0.999 | 0.999 | 0.999 | 0.999 |
-
-*(Not: Tablo ve performans grafikleri Çilburunoğlu (2023) tez çalışmasından referans alınarak projemize entegre edilmiştir.)*
-
-[📄 Model Performans Raporu ve ROC Eğrileri (PDF)](model_performansi.pdf)
-
-
-
-###  Kaynakça / Atıf
-* Çilburunoğlu, K. (2023). *Kredi Kartı Dolandırıcılık Tespitinde Makine Öğrenme Algoritmalarının Karşılaştırmalı Analizi*. Yüksek Lisans Tezi, İstanbul Gedik Üniversitesi, Lisansüstü Eğitim Enstitüsü, Yapay Zekâ Mühendisliği Anabilim Dalı.
 
 ## Literatür
 
