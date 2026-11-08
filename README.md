@@ -48,16 +48,19 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 ## Proje Diyagramları ve Uygulama İşleyişi
 [📄 Proje Use Case Diyagramı (PDF)](ProjeUseCaseDiyagrami.pdf)
 
+*Bu diyagram, ekip üyelerinin (Naz, Kaan, Kerem) proje boyunca üstlendiği görev dağılımını ve sistemle olan etkileşimlerini göstermektedir.
 
 [📄 Proje Class Diyagramı (PDF)](ProjeClassDiyagrami.pdf)
 
+* Sınıf diyagramı, yazılımın nesne yönelimli mimarisini iki ana pakette (Süreç ve Takım Yönetimi ve Makine Öğrenmesi) incelemektedir. ProjeYonetimi ve EkipUyesi sınıfları sprint ve görev takibini sağlarken; VeriYoneticisi, ModelEgiticisi ve ModelDegerlendirici sınıfları veri yükleme, SMOTE dengeleme, model eğitme (Logistic Regression, Decision Tree vb.) ve metrik hesaplama (Accuracy, F1, ROC-AUC) operasyonlarını yürütmektedir. Bu sınıflar, projenin yazılım mühendisliği prensiplerine uygun modüler yapısını temsil eder.
 
 [📄 Proje Activity Diyagramı (PDF)](ProjeActivityDiyagrami.pdf)
 
-
+* Aktivite diyagramı, projenin gereksinim analiziyle başlayıp model eğitimi, başarı ölçümleri ve raporlamayla biten adım adım iş akışını görselleştirmektedir. Süreç, literatür taraması ve veri ön işleme adımlarıyla beslenmekte, ardından ardışık olarak model kodlanması ve hata analizleriyle tamamlanmaktadır. Bu akış, projenin sistematik bir metodolojiyle ilerlediğini ortaya koymaktadır.
+  
 [📄 Uygulama İşleyişi (PDF)](Uygulamaİsleyisi.pdf)
 
-
+* Bu akış şeması, sistemin çalışma anındaki anlık karar mekanizmasını özetlemektedir. Kullanıcıdan alınan işlem bilgileri analiz edilerek dolandırıcılık olasılığı hesaplanmaktadır. İşlem normal ise onaylanmakta, şüpheli olarak tespit edildiğinde ise otomatik bildirim gönderilerek engelleme mekanizması devreye girmektedir.
 
 ## Literatür
 ***************************
