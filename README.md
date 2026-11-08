@@ -76,7 +76,7 @@ Projemizde kullanılan Dünya/ULB kredi kartı işlem veri setindeki sınıf den
 
 *(Not: Tablo ve performans grafikleri Çilburunoğlu (2023) tez çalışmasından referans alınarak projemize entegre edilmiştir.)*
 
-[📄 Model Performans Raporu ve ROC Eğrileri (PDF)](https://github.com/user-attachments/files/34541683/model_performansi.pdf)
+[📄 Model Performans Raporu ve ROC Eğrileri (PDF)](model_performansi.pdf)
 
 
 
