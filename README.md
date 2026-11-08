@@ -64,9 +64,17 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 
 ## Literatür
 
-**Makale Bağlantısı:** [10.26650-JEPR1433315-3713306.pdf](https://github.com/user-attachments/files/34531148/10.26650-JEPR1433315-3713306.pdf)
+**Makale Bağlantısı:** [Denetimli Makine Öğrenmesi ile Kredi Kartı Sahteciliği Tespiti (PDF)](https://github.com/user-attachments/files/34531148/10.26650-JEPR1433315-3713306.pdf)
+**Kısa Özet:**Bu çalışmada, bir kamu bankasına ait 13.050 gerçek kredi kartı işlemi incelenmiş; Python kullanılarak Lojistik Regresyon, Karar Ağaçları, Rassal Orman ve Gradyan Güçlendirme algoritmaları test edilmiştir. Çalışma sonucunda Karar Ağacı algoritmasının %93.1 doğruluk oranıyla en az hatalı tahmini yapan model olduğu kanıtlanmıştır.
+**Projeye Gerekçesi:**Literatürdeki bu sonuç doğrultusunda, projemizde gerçek veri setleri üzerinde yüksek başarı gösteren ağaç tabanlı sınıflandırma algoritmalarını (Karar Ağacı ve Rassal Orman) benimseme kararımız akademik olarak gerekçelendirilmiştir.
 
+**Makale Bağlantısı:** 
+**Kısa Özet:**
+**Projeye Gerekçesi:**
 
+**Makale Bağlantısı:** 
+**Kısa Özet:**
+**Projeye Gerekçesi:**
 
 ## Ekip ve Roller  
 
