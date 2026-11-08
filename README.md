@@ -48,7 +48,7 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 ## Proje Diyagramları ve Uygulama İşleyişi
 [📄 Proje Use Case Diyagramı (PDF)](ProjeUseCaseDiyagrami.pdf)
 
-*Bu diyagram, ekip üyelerinin (Naz, Kaan, Kerem) proje boyunca üstlendiği görev dağılımını ve sistemle olan etkileşimlerini göstermektedir.
+* Bu diyagram, ekip üyelerinin (Naz, Kaan, Kerem) proje boyunca üstlendiği görev dağılımını ve sistemle olan etkileşimlerini göstermektedir.
 
 [📄 Proje Class Diyagramı (PDF)](ProjeClassDiyagrami.pdf)
 
