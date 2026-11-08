@@ -76,7 +76,7 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 
 * Projeye Gerekçesi: Literatürdeki bu sonuç doğrultusunda, projemizde veri dengesizliğini gidermek için SMOTE yöntemini benimseme ve yüksek başarı gösteren ağaç tabanlı ile derin öğrenme modellerini kullanma kararımız akademik olarak gerekçelendirilmiştir.
 
-**Makale Bağlantısı:** [KARTLI ÖDEME SİSTEMLERİNDE DOLANDIRICILIK_ TÜRLER, TEHDİT ANALİZİ VE ÖNLEME STRATEJİLERİ (PDF)](https://github.com/user-attachments/files/34531404/KARTLI.ODEME.SISTEMLERINDE.DOLANDIRICILIK_.TURLER.TEHDIT.ANALIZI.VE.ONLEME.STRATEJILERI.1973689.-6122514.pdf)
+**Makale Bağlantısı:** [Kartlı Ödeme Sistemlerinde Dolandırıcılık: Türler, Tehdit Analizi ve Önleme Stratejileri (PDF)](https://github.com/user-attachments/files/34531404/KARTLI.ODEME.SISTEMLERINDE.DOLANDIRICILIK_.TURLER.TEHDIT.ANALIZI.VE.ONLEME.STRATEJILERI.1973689.-6122514.pdf)
 
 * Kısa Özet: Bu çalışmada, kartlı ödeme sistemlerindeki dolandırıcılıklar ATM, kart, üye işyeri ve dijital/uzaktan kanallar (CNP, SIM swap, dijital cüzdan) olmak üzere sistematik bir taksonomiyle sınıflandırılmış; risk matrisi ve PCI-DSS/EMV standartlarını içeren çok katmanlı koruma çerçevesi sunulmuştur.
   
