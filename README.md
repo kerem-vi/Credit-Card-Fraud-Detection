@@ -63,7 +63,9 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 * Bu akış şeması, sistemin çalışma anındaki anlık karar mekanizmasını özetlemektedir. Kullanıcıdan alınan işlem bilgileri analiz edilerek dolandırıcılık olasılığı hesaplanmaktadır. İşlem normal ise onaylanmakta, şüpheli olarak tespit edildiğinde ise otomatik bildirim gönderilerek engelleme mekanizması devreye girmektedir.
 
 ## Literatür
-***************************
+
+**Makale Bağlantısı:** [10.26650-JEPR1433315-3713306.pdf](https://github.com/user-attachments/files/34531148/10.26650-JEPR1433315-3713306.pdf)
+
 
 
 ## Ekip ve Roller  
