@@ -76,7 +76,8 @@ Projemizde kullanılan Dünya/ULB kredi kartı işlem veri setindeki sınıf den
 
 *(Not: Tablo ve performans grafikleri Çilburunoğlu (2023) tez çalışmasından referans alınarak projemize entegre edilmiştir.)*
 
-[📄 Model Performans Raporu ve ROC Eğrileri (PDF)](model_performansi.pdf)
+[📄 Model Performans Raporu ve ROC Eğrileri (PDF)](<img width="1094" height="1600" alt="model_performansi" src="https://github.com/user-attachments/assets/356854bd-4db2-46d5-8876-f1f4ca91ebe3" />
+)
 
 ###  Kaynakça / Atıf
 * Çilburunoğlu, K. (2023). *Kredi Kartı Dolandırıcılık Tespitinde Makine Öğrenme Algoritmalarının Karşılaştırmalı Analizi*. Yüksek Lisans Tezi, İstanbul Gedik Üniversitesi, Lisansüstü Eğitim Enstitüsü, Yapay Zekâ Mühendisliği Anabilim Dalı.
