@@ -75,7 +75,7 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 
 * Kısa Özet: Bu çalışmada, 284.807 işlem içeren kredi kartı veri kümesindeki sınıf dengesizliği SMOTE yöntemi ile giderilmiş; Lojistik Regresyon, Destek Vektör Makineleri, Karar Ağaçları, Rastgele Orman ve Yapay Sinir Ağları (ANN) test edilmiştir. Çalışma sonucunda Yapay Sinir Ağları %99.94 doğruluk oranıyla en yüksek başarıyı sağlarken, Karar Ağaçları ve Rastgele Orman modellerinin de yüksek doğruluk, dengeli sonuçlar ve açıklanabilirlik sunduğu kanıtlanmıştır.
 
-* Projeye Gerekçesi: Literatürdeki bu sonuç doğrultusunda, projemizde veri dengesizliğini gidermek için SMOTE yöntemini benimseme ve yüksek başarı gösteren ağaç tabanlı ile derin öğrenme modellerini kullanma kararımız akademik olarak gerekçelendirilmiştir.
+* Projeye Gerekçesi: Literatürdeki bu sonuç doğrultusunda, projemizde veri dengesizliğini gidermek için SMOTE yöntemini benimseme ve yüksek başarı gösteren ağaç tabanlı makine öğrenme modellerini kullanma kararımız akademik olarak gerekçelendirilmiştir.
 
 **Makale Bağlantısı:** [Kartlı Ödeme Sistemlerinde Dolandırıcılık: Türler, Tehdit Analizi ve Önleme Stratejileri (PDF)](https://github.com/user-attachments/files/34531404/KARTLI.ODEME.SISTEMLERINDE.DOLANDIRICILIK_.TURLER.TEHDIT.ANALIZI.VE.ONLEME.STRATEJILERI.1973689.-6122514.pdf)
 
