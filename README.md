@@ -65,19 +65,19 @@ Bu projenin amacı, gerçekleştirilen bir finansal işlemin şüpheli olup olma
 
 ## Literatür
 
-**Makale Bağlantısı:** [Denetimli Makine Öğrenmesi ile Kredi Kartı Sahteciliği Tespiti (PDF)](https://github.com/user-attachments/files/34531148/10.26650-JEPR1433315-3713306.pdf)
+**Makale Bağlantısı:** [Denetimli Makine Öğrenmesi ile Kredi Kartı Sahteciliği Tespiti (PDF)](https://dergipark.org.tr/tr/pub/iuipad/article/1433315)
 
 * Kısa Özet: Bu çalışmada, bir kamu bankasına ait 13.050 gerçek kredi kartı işlemi incelenmiş; Python kullanılarak Lojistik Regresyon, Karar Ağaçları, Rassal Orman ve Gradyan Güçlendirme algoritmaları test edilmiştir. Çalışma sonucunda Karar Ağacı algoritmasının %93.1 doğruluk oranıyla en az hatalı tahmini yapan model olduğu kanıtlanmıştır.
 
 * Projeye Gerekçesi: Literatürdeki bu sonuç doğrultusunda, projemizde gerçek veri setleri üzerinde yüksek başarı gösteren ağaç tabanlı sınıflandırma algoritmalarını (Karar Ağacı ve Rassal Orman) benimseme kararımız akademik olarak gerekçelendirilmiştir.
 
-**Makale Bağlantısı:** [Kredi Kartı Dolandırıcılık Tespitinde Makine Öğrenme Algoritmalarının Karşılaştırmalı Analizi (PDF)](https://github.com/user-attachments/files/34531316/Tam.Metin._.Full.Text.pdf)
+**Makale Bağlantısı:** [Kredi Kartı Dolandırıcılık Tespitinde Makine Öğrenme Algoritmalarının Karşılaştırmalı Analizi (PDF)](https://openaccess.gedik.edu.tr/items/b90021f9-cb21-411f-91d0-271816887789)
 
 * Kısa Özet: Bu çalışmada, 284.807 işlem içeren kredi kartı veri kümesindeki sınıf dengesizliği SMOTE yöntemi ile giderilmiş; Lojistik Regresyon, Destek Vektör Makineleri, Karar Ağaçları, Rastgele Orman ve Yapay Sinir Ağları (ANN) test edilmiştir. Çalışma sonucunda Yapay Sinir Ağları %99.94 doğruluk oranıyla en yüksek başarıyı sağlarken, Karar Ağaçları ve Rastgele Orman modellerinin de yüksek doğruluk, dengeli sonuçlar ve açıklanabilirlik sunduğu kanıtlanmıştır.
 
 * Projeye Gerekçesi: Literatürdeki bu sonuç doğrultusunda, projemizde veri dengesizliğini gidermek için SMOTE yöntemini benimseme ve yüksek başarı gösteren ağaç tabanlı makine öğrenme modellerini kullanma kararımız akademik olarak gerekçelendirilmiştir.
 
-**Makale Bağlantısı:** [Kartlı Ödeme Sistemlerinde Dolandırıcılık: Türler, Tehdit Analizi ve Önleme Stratejileri (PDF)](https://github.com/user-attachments/files/34531404/KARTLI.ODEME.SISTEMLERINDE.DOLANDIRICILIK_.TURLER.TEHDIT.ANALIZI.VE.ONLEME.STRATEJILERI.1973689.-6122514.pdf)
+**Makale Bağlantısı:** [Kartlı Ödeme Sistemlerinde Dolandırıcılık: Türler, Tehdit Analizi ve Önleme Stratejileri (PDF)](https://dergipark.org.tr/tr/pub/pabd/article/1973689)
 
 * Kısa Özet: Bu çalışmada, kartlı ödeme sistemlerindeki dolandırıcılıklar ATM, kart, üye işyeri ve dijital/uzaktan kanallar (CNP, SIM swap, dijital cüzdan) olmak üzere sistematik bir taksonomiyle sınıflandırılmış; risk matrisi ve PCI-DSS/EMV standartlarını içeren çok katmanlı koruma çerçevesi sunulmuştur.
   
